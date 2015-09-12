@@ -13,6 +13,6 @@ Amen.describe "Hashing/Encoding Functions", (context) ->
     assert (base64 "It was a dark and stormy night") ==
       "SXQgd2FzIGEgZGFyayBhbmQgc3Rvcm15IG5pZ2h0"
 
-  context.test "base64url", ->
-    assert (base64 "It was a dark and stormy night.") ==
-      "SXQgd2FzIGEgZGFyayBhbmQgc3Rvcm15IG5pZ2h0Lg"
+  context.test "base64url"
+    assert (base64url "http://www.google.com") ==
+      "aHR0cDovL3d3dy5nb29nbGUuY29t"
