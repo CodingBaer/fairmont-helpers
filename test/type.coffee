@@ -62,8 +62,6 @@ Amen.describe "Type functions", (context) ->
     assert isArray []
     assert !isArray 7
 
-  isDefined = (x) -> x?
-
   context.test "isDefined", ->
     assert isDefined {}
     assert !isDefined undefined
